@@ -8,7 +8,6 @@ Model the following Online Mobile Shopping information as a document database. C
 
 	db.custome.insert({cname:"mukesh",modelname:"samsungj6",amount:20000})
 	
-
 	db.custome.insert({cname:"abhijeet",modelname:"samsungj6",amount:20060})
 
 	 db.custome.insert({cname:"manasi",modelname:"iphone7+",amount:30060})
@@ -17,18 +16,13 @@ Model the following Online Mobile Shopping information as a document database. C
 
 	 db.custome.insert({cname:"dipak",modelname:"iphone7+",amount:30800})
 
-
 	db.shopping.insert({brandname:"samsung",rate:6,model:[{mname:"s40",ram:"3GB",rom:"32GB",rate:4},
 	{mname:"j6",ram:"4GB",rom:"32GB",rate:7},{mname:"j7",ram:"6GB",rom:"64GB",rate:6}]})
 
-
 	db.shopping.insert({brandname:"vivo",rate:8,model:[{mname:"Y55",ram:"3GB",rom:"32GB",rate:6},{mname:"Ys5",ram:"4
 	GB",rom:"32GB",rate:4},{mname:"YYY",ram:"6GB",rom:"64GB",rate:6}]})
-
 	
-	****************************************************
 	a) >db.shopping.find({"model.ram":"3GB","model.rom":"32GB"})
 	b) > db.custome.find({modelname:"samsung j6"})
 	c) > db.shopping.aggregate([{"$sort":{"rate":1}},{"$limit":1},{$group:{_id:"$brandname"}}])
-
-d) > db.custome.find().sort( { "cname": 1 } )
+	d) > db.custome.find().sort( { "cname": 1 } )
