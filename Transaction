@@ -1,8 +1,5 @@
 Model the following transaction information as a document database. 
 
-The transaction keep track of items purchased by a customer and the way in which the payment was done – Cash, Credit Card or Debit Card 
-2. Assume appropriate attributes and collections as per the query requirements. 
-3. Insert at least 10 documents in each collection. 
 	4. Answer the following Queries. a. Find all transactions which were made by the user “John” 
 	b. Find all the transactions which were made using debit card 
 	c. Find transaction id and total amount of purchase made using a credit card 
@@ -11,22 +8,16 @@ The transaction keep track of items purchased by a customer and the way in which
 
 db.transaction.insert({itemName:"toy",customerName:"john",paymentmode:"debitcard",payment:8000})
 
-
 db.transaction.insert({itemName:"car",customerName:"john",paymentmode:"creditcard",payment:4000})
-
 
 db.transaction.insert({itemName:"bag",customerName:"mukesh",paymentmode:"cash",payment:5000})
 
-
 db.transaction.insert({itemName:"airlineticket",customerName:"rohit",paymentmode:"cash",payment:50090})
-
 
 db.transaction.insert({itemName:"mango",customerName:"abhijeet",paymentmode:"creditcard",payment:8000})
 
-
 db.transaction.insert({itemName:"bus",customerName:"manasi",paymentmode:"debitcard",payment:7000})
 
-**************************************
 a) > db.transaction.find({customerName:"john"})
 
 b) > db.transaction.find({paymentmode:"debitcard"})
