@@ -20,7 +20,6 @@ The inventory keeps track of various items. The items are tagged in various cate
 	db.item.insert({itemName:"bag",tag:["food","vehicle","school","travel"],status:"c",height:19,width:39,instack:75,
 	warehouse:[{location:"surat",quntity:26},{location:"lanavala",quntity:17}]})
 	
-
 	a) > db.item.find({status:"D","warehouse.quntity":{$gt:30}})
 	b) > db.item.find({"tag":{$size:3}})
 	c) >db.item.find({$or:[{status:"A"},{"warehouse.quntity":{$lt:30},height:{$gt:10}}]})
