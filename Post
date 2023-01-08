@@ -1,6 +1,4 @@
-Model the following blog database with the following requirements: Every post has the unique title, description and url, Every post can have one or more tags, Every post has the name of its publisher and total number of likes, Every post has comments given by users along with their name, message, data-time and likes. On each post, there can be zero or more comments. 
-2. Assume appropriate attributes and collections as per the query requirements. 
-3. Insert at least 10 documents in each collection. [
+
 	4. Answer the following Queries a. List all the blogs which are tagged as food blogs 
 	b. List all the blogs that are posted by “Amit” 
 	c. List all the blogs that are tagged a “travel blogs” and were created before 2018 and are have comments written by “Sagar” and commented as “like” 
